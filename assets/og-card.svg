@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3efe6" />
+      <stop offset="100%" stop-color="#fbfaf7" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <circle cx="150" cy="110" r="180" fill="#dce8df" />
+  <rect x="70" y="80" width="1060" height="470" rx="34" fill="#ffffff" stroke="#d6d0c3" />
+  <text x="120" y="220" fill="#1f5c4d" font-size="24" font-family="Arial, sans-serif" letter-spacing="5">
+    AI ENGINEER PORTFOLIO
+  </text>
+  <text x="120" y="320" fill="#1f2522" font-size="72" font-family="Georgia, serif">
+    Yoonhye Kim
+  </text>
+  <text x="120" y="392" fill="#58615a" font-size="34" font-family="Arial, sans-serif">
+    Retrieval, RAG, AI Serving, and Applied ML Systems
+  </text>
+  <text x="120" y="470" fill="#1f2522" font-size="26" font-family="Arial, sans-serif">
+    3+ years • 60% GPU cost reduction • 30K-user CBT environment
+  </text>
+</svg>
