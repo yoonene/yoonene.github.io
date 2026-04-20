@@ -8,13 +8,13 @@ const portfolioData = {
       "Over the past three years, I've worked on live AI products where retrieval quality, latency, and cost all matter at once. My work sits at the intersection of search, evaluation, model optimization, and serving, with a strong focus on building systems teams can actually ship and operate.",
     ctas: [
       { label: "Resume", href: "CV_OOO.pdf", primary: true },
-      { label: "GitHub", href: "[Add GitHub URL]" },
+      { label: "GitHub", href: "https://github.com/yoonene" },
       { label: "LinkedIn", href: "https://www.linkedin.com/in/yoonhye-kim-271a6a216/" },
-      { label: "Email", href: "mailto:[Add email address]" }
+      { label: "Email", href: "mailto:neune21153@gmail.com" }
     ],
     contact: [
-      { label: "Email", value: "[Add email address]", href: "mailto:[Add email address]" },
-      { label: "GitHub", value: "[Add GitHub URL]", href: "[Add GitHub URL]" },
+      { label: "Email", value: "neune21153@gmail.com", href: "mailto:neune21153@gmail.com" },
+      { label: "GitHub", value: "https://github.com/yoonene", href: "https://github.com/yoonene" },
       { label: "LinkedIn", value: "https://www.linkedin.com/in/yoonhye-kim-271a6a216/", href: "https://www.linkedin.com/in/yoonhye-kim-271a6a216/" },
       { label: "Phone", value: "[Add phone number]" },
       { label: "Location", value: "Vancouver, BC, Canada" },
