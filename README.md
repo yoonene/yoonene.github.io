@@ -6,7 +6,7 @@ Static recruiter-focused portfolio site built from the attached CV content only.
 
 ```text
 .
-├── CV_OOO.pdf
+├── CV.pdf
 ├── README.md
 ├── index.html
 ├── script.js
