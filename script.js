@@ -9,13 +9,13 @@ const portfolioData = {
     ctas: [
       { label: "Resume", href: "CV_OOO.pdf", primary: true },
       { label: "GitHub", href: "[Add GitHub URL]" },
-      { label: "LinkedIn", href: "[Add LinkedIn URL]" },
+      { label: "LinkedIn", href: "https://www.linkedin.com/in/yoonhye-kim-271a6a216/" },
       { label: "Email", href: "mailto:[Add email address]" }
     ],
     contact: [
       { label: "Email", value: "[Add email address]", href: "mailto:[Add email address]" },
       { label: "GitHub", value: "[Add GitHub URL]", href: "[Add GitHub URL]" },
-      { label: "LinkedIn", value: "[Add LinkedIn URL]", href: "[Add LinkedIn URL]" },
+      { label: "LinkedIn", value: "https://www.linkedin.com/in/yoonhye-kim-271a6a216/", href: "https://www.linkedin.com/in/yoonhye-kim-271a6a216/" },
       { label: "Phone", value: "[Add phone number]" },
       { label: "Location", value: "Vancouver, BC, Canada" },
       { label: "Work authorization", value: "Open Work Permit" }
