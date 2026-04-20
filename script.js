@@ -14,9 +14,8 @@ const portfolioData = {
     ],
     contact: [
       { label: "Email", value: "neune21153@gmail.com", href: "mailto:neune21153@gmail.com" },
-      { label: "GitHub", value: "https://github.com/yoonene", href: "https://github.com/yoonene" },
-      { label: "LinkedIn", value: "https://www.linkedin.com/in/yoonhye-kim-271a6a216/", href: "https://www.linkedin.com/in/yoonhye-kim-271a6a216/" },
-      { label: "Phone", value: "[Add phone number]" },
+      { label: "GitHub", value: "yoonene", href: "https://github.com/yoonene" },
+      { label: "LinkedIn", value: "yoonhye kim", href: "https://www.linkedin.com/in/yoonhye-kim-271a6a216/" },
       { label: "Location", value: "Vancouver, BC, Canada" },
       { label: "Work authorization", value: "Open Work Permit" }
     ]
@@ -24,7 +23,7 @@ const portfolioData = {
   projects: [
     {
       title: "Retrieval Infrastructure for Live AI Products",
-      context: "AI Engineer · Company A · 2023-2026",
+      context: "AI Engineer · Smilegate · 2023-2026",
       problem:
         "I led retrieval work across multiple AI products where quality, evaluation, and serving efficiency all had to improve together, especially for Korean-language and domain-specific queries.",
       whatWasDone: [
@@ -55,7 +54,7 @@ const portfolioData = {
     },
     {
       title: "Low-Latency AI Customization Pipeline",
-      context: "AI Engineer · Company A · 30K-user CBT · 2025-2026",
+      context: "AI Engineer · Smilegate · 30K-user CBT · 2025-2026",
       problem:
         "For a live AI customization feature, the challenge was to keep the experience fast and affordable under real traffic without hurting user satisfaction.",
       whatWasDone: [
@@ -84,7 +83,7 @@ const portfolioData = {
     },
     {
       title: "Long-Term Memory for Virtual Characters",
-      context: "AI Engineer · Company A · 2024",
+      context: "AI Engineer · Smilegate · 2024",
       problem:
         "I worked on a memory system for persona-driven AI characters that needed to stay coherent over time, even in live sessions with many participants.",
       whatWasDone: [
@@ -108,7 +107,7 @@ const portfolioData = {
     },
     {
       title: "Personalized AI Guide for Game Context",
-      context: "AI Engineer · Company A · 2026",
+      context: "AI Engineer · Smilegate · 2026",
       problem:
         "To make in-game guidance feel genuinely personalized, retrieval had to reason over both player context and game knowledge instead of treating them as separate sources.",
       whatWasDone: [
@@ -134,7 +133,7 @@ const portfolioData = {
   experience: [
     {
       role: "AI Engineer",
-      company: "Company A, South Korea",
+      company: "Smilegate, South Korea",
       dates: "Apr 2023 - Mar 2026",
       bullets: [
         "Worked across multiple live AI products, focusing on retrieval quality, evaluation, and efficient serving.",
@@ -148,7 +147,7 @@ const portfolioData = {
     },
     {
       role: "AI Research Intern",
-      company: "Company A, South Korea",
+      company: "Smilegate, South Korea",
       dates: "Jan 2023 - Mar 2023",
       bullets: [
         "Fine-tuned persona-based LLMs and implemented hybrid memory retrieval using Elasticsearch."
@@ -156,7 +155,7 @@ const portfolioData = {
     },
     {
       role: "Research Intern",
-      company: "Company B, South Korea",
+      company: "Korea Institute of Science and Technology(KIST), South Korea",
       dates: "Mar 2021 - Jun 2021",
       bullets: [
         "Developed a real-time medical image segmentation and 3D reconstruction system and co-authored a paper presented at OO."
@@ -165,9 +164,9 @@ const portfolioData = {
   ],
   publications: [
     {
-      title: "OO",
-      venue: "EMBC",
-      year: "2022",
+      title: "Segmentation of Carotid Vessel using Res-Unet for Point-of-Care Ultrasound",
+      venue: "IEEE EMBC(Engineering in Medicine and Biology Conference)",
+      year: "2023",
       description:
         "Co-authored a paper on real-time carotid vessel segmentation for handheld ultrasound, using a residual U-Net architecture to improve segmentation and Doppler accuracy in resource-limited settings.",
       note: ""
