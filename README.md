@@ -6,7 +6,7 @@ Static recruiter-focused portfolio site built from the attached CV content only.
 
 ```text
 .
-├── CV_Yoonhye Kim.pdf
+├── CV_OOO.pdf
 ├── README.md
 ├── index.html
 ├── script.js
@@ -96,20 +96,13 @@ Layout and SEO live in:
 - `[Add LinkedIn URL]`
 - `[Add email address]`
 - `[Add phone number]`
-- `[Add location in Canada or target city]`
 - `[Add deployed site URL]`
-- `[Add measurable search quality metric]`
-- `[Add production scale or request volume]`
-- `[Add exact serving or storage components]`
-- `[Add retention, engagement, or satisfaction metric]`
-- `[Add project link]`
+- `[Add retrieval quality metric]`
+- `[Add consistency or engagement metric]`
+- `[Add quality or task-completion metric]`
 - `[Add link]`
-- Education section placeholders:
-  - `[Add degree]`
-  - `[Add school name]`
-  - `[Add dates]`
 - Additional section placeholders for achievements, open source, talks, certifications, awards, leadership, and research interests
-- Missing detail placeholders in experience bullets where the CV extract did not include metrics
+- Missing public links for project case studies or demos
 
 ## Notes on source fidelity
 

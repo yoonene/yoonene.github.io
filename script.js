@@ -1,13 +1,13 @@
 const portfolioData = {
   profile: {
     name: "Yoonhye Kim",
-    badge: "Open Work Permit",
+    badge: "Vancouver, BC, Canada · Open Work Permit",
     headline:
-      "Machine Learning Engineer building production retrieval, RAG, and AI serving systems.",
+      "I build AI systems that need to be fast, reliable, and useful in the real world.",
     summary:
-      "Machine Learning Engineer with 3+ years of experience building production retrieval and RAG systems for game AI services. Delivered measurable results including 60% GPU cost reduction and 2× latency improvement in a 30K-user CBT environment.",
+      "Over the past three years, I've worked on live AI products where retrieval quality, latency, and cost all matter at once. My work sits at the intersection of search, evaluation, model optimization, and serving, with a strong focus on building systems teams can actually ship and operate.",
     ctas: [
-      { label: "Resume", href: "CV_Yoonhye Kim.pdf", primary: true },
+      { label: "Resume", href: "CV_OOO.pdf", primary: true },
       { label: "GitHub", href: "[Add GitHub URL]" },
       { label: "LinkedIn", href: "[Add LinkedIn URL]" },
       { label: "Email", href: "mailto:[Add email address]" }
@@ -17,56 +17,52 @@ const portfolioData = {
       { label: "GitHub", value: "[Add GitHub URL]", href: "[Add GitHub URL]" },
       { label: "LinkedIn", value: "[Add LinkedIn URL]", href: "[Add LinkedIn URL]" },
       { label: "Phone", value: "[Add phone number]" },
-      { label: "Location", value: "[Add location in Canada or target city]" },
+      { label: "Location", value: "Vancouver, BC, Canada" },
       { label: "Work authorization", value: "Open Work Permit" }
     ]
   },
   projects: [
     {
-      title: "Cross-Service Retrieval System Development",
+      title: "Retrieval Infrastructure for Live AI Products",
       context: "AI Engineer · Company A · 2023-2026",
       problem:
-        "Multiple services needed stronger retrieval quality, consistent evaluation, and more efficient serving across varied formats and languages.",
+        "I led retrieval work across multiple AI products where quality, evaluation, and serving efficiency all had to improve together, especially for Korean-language and domain-specific queries.",
       whatWasDone: [
-        "Drove embedding model training, selection, reranker training, and evaluation across services.",
-        "Built service-specific evaluation datasets and an internal leaderboard for systematic benchmarking.",
-        "Improved search quality through LLM-based query rewriting, chunking strategy design, and an LM-based chunking validation pipeline.",
-        "Benchmarked open-source and custom embedding models, then transitioned to cost-efficient off-the-shelf models once quality matured.",
-        "Optimized embedding and reranker serving with TEI on H100 MIG instances and used load testing to set latency and resource targets.",
-        "Automated indexing and post-update validation pipelines spanning RDB, Milvus, MongoDB, and Redis via Airflow."
+        "Built Korean-language and service-specific evaluation datasets, along with an internal benchmark workflow that made model comparisons far more grounded.",
+        "Improved search quality through embedding and reranker experiments, query rewriting, and chunking strategy changes across multiple services.",
+        "Moved the stack from in-house embedding training to open-source models such as Qwen3-Embedding, reducing maintenance overhead without giving up quality.",
+        "Optimized TEI serving on H100 MIG and load-tested different configurations to find practical latency and resource targets.",
+        "Built an end-to-end retrieval evaluation workflow covering preprocessing, indexing, logging, validation, and RAGAS-based reporting."
       ],
       stack: [
         "Python",
-        "RAG",
+        "Retrieval Systems",
         "Embedding Models",
         "Rerankers",
+        "RAGAS",
+        "Qwen3-Embedding",
         "TEI",
         "H100 MIG",
         "Airflow",
-        "Milvus",
-        "MongoDB",
-        "Redis"
+        "Query Rewriting"
       ],
       impact: [
-        "Established a repeatable benchmarking workflow for model comparison.",
-        "[Add measurable search quality metric]",
-        "[Add production scale or request volume]"
+        "Created a repeatable benchmark for retrieval changes instead of relying on one-off checks.",
+        "Reduced model maintenance cost by replacing custom training where it no longer made sense.",
+        "Made retrieval improvements easier to compare, tune, and ship across teams."
       ],
-      links: [
-        { label: "Project link", href: "[Add project link]" }
-      ]
+      links: []
     },
     {
-      title: "In-Game AI Customization Pipeline",
+      title: "Low-Latency AI Customization Pipeline",
       context: "AI Engineer · Company A · 30K-user CBT · 2025-2026",
       problem:
-        "The original generation-heavy pipeline was too slow and expensive for a live customization workflow.",
+        "For a live AI customization feature, the challenge was to keep the experience fast and affordable under real traffic without hurting user satisfaction.",
       whatWasDone: [
-        "Designed a hybrid retrieval-generation architecture that shifted more traffic to retrieval.",
-        "Fine-tuned a 3B language model with LoRA on 500K-1M curated samples selected from an approximately 2M dataset.",
-        "Replaced third-party APIs with an internal model path to improve responsiveness and reduce dependency on external providers.",
-        "Removed a VLM-based image scoring bottleneck by replacing it with a fine-tuned reranker.",
-        "Deployed models with vLLM on AWS H100 MIG infrastructure in collaboration with infrastructure engineers."
+        "Designed a hybrid retrieval-plus-generation pipeline so more requests could avoid the heaviest generation path.",
+        "Fine-tuned a 3B LLM with LoRA on curated production-style data to replace third-party APIs and bring latency under tighter control.",
+        "Replaced VLM-based image scoring with a reranker to remove a major inference bottleneck.",
+        "Served the stack with vLLM on AWS H100 MIG and tuned it for stable throughput in a high-traffic test environment."
       ],
       stack: [
         "Python",
@@ -76,40 +72,63 @@ const portfolioData = {
         "AWS",
         "H100 MIG",
         "Rerankers",
-        "LLMs"
+        "LLMs",
+        "VLM"
       ],
       impact: [
-        "Reduced latency from approximately 5 seconds to under 2 seconds.",
-        "Served more than 60% of requests via retrieval, reducing GPU cost by 60%.",
-        "Reduced peak latency from approximately 8 seconds to approximately 1 second while maintaining around 80% user satisfaction."
+        "Cut end-to-end latency from roughly 5 seconds to under 2 seconds.",
+        "Routed more than 60% of requests through retrieval, reducing GPU cost by 60% while keeping satisfaction around 80%.",
+        "Reduced peak latency from about 8 seconds to around 1 second in the optimized path."
       ],
-      links: [
-        { label: "Demo or case study", href: "[Add link]" }
-      ]
+      links: []
     },
     {
-      title: "Virtual AI Character Memory System",
+      title: "Long-Term Memory for Virtual Characters",
       context: "AI Engineer · Company A · 2024",
       problem:
-        "Live AI character experiences required persistent state, dynamic persona updates, and reliable memory retrieval across sessions.",
+        "I worked on a memory system for persona-driven AI characters that needed to stay coherent over time, even in live sessions with many participants.",
       whatWasDone: [
-        "Developed a long-term memory architecture combining vector retrieval with structured state tracking.",
-        "Enabled dynamic updates of memory, persona, and personality across live sessions.",
-        "Supported interactive use with hundreds of concurrent users."
+        "Built an LLM-based memory extraction and consolidation flow on top of vector and relational storage.",
+        "Supported dynamic updates to memory, persona, and personality without breaking conversational continuity.",
+        "Filed the system as a patent related to long-term memory management for chatbot services."
       ],
       stack: [
-        "Vector Retrieval",
-        "Structured State Tracking",
-        "LLM Systems",
-        "[Add exact serving or storage components]"
+        "LLMs",
+        "Vector Storage",
+        "Relational Storage",
+        "Memory Extraction",
+        "Persona-based Chatbots"
       ],
       impact: [
-        "Supported hundreds of concurrent users.",
-        "[Add retention, engagement, or satisfaction metric]"
+        "Supported live 1:N sessions with hundreds of concurrent viewers.",
+        "Improved consistency across multi-turn character interactions.",
+        "Turned a research-heavy problem into a production-ready system design."
       ],
-      links: [
-        { label: "Architecture write-up", href: "[Add link]" }
-      ]
+      links: []
+    },
+    {
+      title: "Personalized AI Guide for Game Context",
+      context: "AI Engineer · Company A · 2026",
+      problem:
+        "To make in-game guidance feel genuinely personalized, retrieval had to reason over both player context and game knowledge instead of treating them as separate sources.",
+      whatWasDone: [
+        "Built a retrieval pipeline that combined player context with structured and unstructured game knowledge.",
+        "Used a graph-inspired retrieval approach to improve multi-hop questions.",
+        "Focused on making answers more specific to each player's current situation."
+      ],
+      stack: [
+        "Retrieval Systems",
+        "Graph-based Retrieval",
+        "Player Context",
+        "Game Knowledge",
+        "Multi-hop Retrieval"
+      ],
+      impact: [
+        "Improved retrieval quality for guidance tasks that required connecting multiple pieces of context.",
+        "Expanded the system's ability to handle multi-hop questions without adding unnecessary latency.",
+        "Created a stronger foundation for future player-facing assistant features."
+      ],
+      links: []
     }
   ],
   experience: [
@@ -118,16 +137,13 @@ const portfolioData = {
       company: "Company A, South Korea",
       dates: "Apr 2023 - Mar 2026",
       bullets: [
-        "Led cross-service retrieval optimization through embedding model training and selection, reranker training, and evaluation design.",
-        "Created multilingual, multi-format evaluation datasets and an internal leaderboard to make model comparison systematic and repeatable.",
-        "Improved retrieval quality with LLM-based query rewriting, chunking strategies, and an LM-based chunking validation pipeline.",
-        "Shifted model strategy from custom training to cost-efficient off-the-shelf embeddings when quality reached production needs, reducing training overhead while preserving performance.",
-        "Optimized serving with TEI on H100 MIG instances and used load testing to set latency targets and resource allocation.",
-        "Automated indexing and validation workflows across RDB, Milvus, MongoDB, and Redis using Airflow.",
-        "Designed a hybrid retrieval-generation pipeline for in-game AI customization, cutting latency from approximately 5 seconds to under 2 seconds.",
-        "Moved more than 60% of requests to retrieval, reducing GPU cost by 60% while maintaining around 80% user satisfaction.",
-        "Fine-tuned a 3B-parameter language model with LoRA on 500K-1M curated samples to replace third-party APIs and reduce peak latency from approximately 8 seconds to approximately 1 second.",
-        "Built a long-term memory system combining vector retrieval and structured state tracking for virtual AI characters in live sessions."
+        "Worked across multiple live AI products, focusing on retrieval quality, evaluation, and efficient serving.",
+        "Built Korean-language and domain-specific evaluation datasets plus internal benchmarks that made model decisions easier to trust.",
+        "Improved search quality through embedding and reranker experiments, query rewriting, and chunking strategy changes.",
+        "Optimized TEI and vLLM serving on H100 MIG to balance latency, throughput, and operating cost.",
+        "Built a retrieval-heavy AI customization pipeline for a 30K-user CBT, cutting end-to-end latency and GPU cost significantly.",
+        "Developed a patent-filed long-term memory system for persona-based AI characters used in live sessions.",
+        "Built a personalized AI guide that combined player context with game knowledge for better multi-hop retrieval."
       ]
     },
     {
@@ -135,8 +151,7 @@ const portfolioData = {
       company: "Company A, South Korea",
       dates: "Jan 2023 - Mar 2023",
       bullets: [
-        "Fine-tuned persona-based language models and implemented hybrid memory retrieval using Elasticsearch.",
-        "[Add evaluation metric or deployment detail]"
+        "Fine-tuned persona-based LLMs and implemented hybrid memory retrieval using Elasticsearch."
       ]
     },
     {
@@ -144,82 +159,67 @@ const portfolioData = {
       company: "Company B, South Korea",
       dates: "Mar 2021 - Jun 2021",
       bullets: [
-        "Developed a real-time medical image segmentation and 3D reconstruction system.",
-        "Co-authored a paper presented at OO.",
-        "[Add modality, model type, or outcome if available]"
+        "Developed a real-time medical image segmentation and 3D reconstruction system and co-authored a paper presented at OO."
       ]
     }
   ],
   publications: [
     {
-      title: "paper title",
-      venue: "OO",
-      year: "2023",
+      title: "OO",
+      venue: "EMBC",
+      year: "2022",
       description:
-        "Co-authored publication from research internship work. The CV extract redacts the full author list and venue details.",
-      note: "Citation in CV: Yoonhye Kim, XXX, XXX, \"paper title\", OO, 2023"
+        "Co-authored a paper on real-time carotid vessel segmentation for handheld ultrasound, using a residual U-Net architecture to improve segmentation and Doppler accuracy in resource-limited settings.",
+      note: ""
     }
   ],
   patents: [
     "Method and Apparatus for Generating Images for Character Costumes Based on User Input Data, 2026",
     "Apparatus and Method for Dialogue-Based In-Game Automatic Housing Control, 2026",
-    "Apparatus and Method for Long-term Memory Management Supporting Chatbot Service, 2026"
+    "Apparatus and Method for Long-Term Memory Management Supporting Chatbot Service, 2026"
   ],
   skills: {
-    Languages: ["Python", "SQL", "C++"],
-    "ML / AI": [
-      "RAG",
+    Languages: ["Python", "SQL"],
+    "ML / LLM": [
+      "LLMs",
+      "Retrieval-Augmented Systems",
       "Vector Search",
-      "Embedding Training",
-      "Reranker Training",
+      "Embedding & Reranker Training",
+      "Retrieval Evaluation",
       "LoRA / PEFT",
-      "Multimodal Models",
+      "Multimodal Models (VLM)",
       "PyTorch",
       "Transformers"
     ],
-    "LLM / NLP / Retrieval": [
-      "Query Rewriting",
-      "Chunking Strategy Design",
-      "Evaluation Dataset Construction",
-      "Hybrid Retrieval-Generation Systems",
-      "Long-Term Memory Retrieval"
-    ],
-    "Backend / Infra": ["vLLM", "TGI", "TEI", "AWS", "Docker", "Kubernetes (collaborative)", "Airflow"],
-    "Data / DB": ["Milvus", "Elasticsearch", "PostgreSQL", "MongoDB", "Redis"],
-    Tools: ["H100 MIG", "Load Testing", "Benchmarking", "Internal Leaderboards"]
+    Frameworks: ["LangChain", "LangGraph", "RAGAS", "W&B"],
+    Serving: ["vLLM", "TGI", "TEI", "FastAPI"],
+    Databases: ["Milvus", "Elasticsearch", "PostgreSQL", "MongoDB", "Redis"],
+    Infra: ["AWS", "Docker", "Kubernetes", "Airflow"]
   },
   additional: [
     {
-      title: "Achievements",
-      body: "[Add notable awards, rankings, or internal recognition]"
+      title: "What I Enjoy Building",
+      body: "Search and retrieval systems, evaluation workflows, memory-heavy character systems, and the serving layer that keeps them responsive."
     },
     {
-      title: "Open Source",
-      body: "[Add GitHub repositories, OSS contributions, or reusable libraries]"
+      title: "Product Mindset",
+      body: "I care about whether a model change improves the real user experience, not just whether it moves an offline metric."
     },
     {
-      title: "Talks",
-      body: "[Add conference, meetup, or internal presentations]"
+      title: "How I Work",
+      body: "I like owning problems end to end, from dataset design and evaluation to serving decisions and production rollout."
     },
     {
-      title: "Certifications",
-      body: "[Add relevant cloud, ML, or engineering certifications]"
+      title: "Collaboration",
+      body: "A lot of my work sits between research, backend, and product, so I value clear tradeoffs and measurable decisions."
     },
     {
-      title: "Awards",
-      body: "[Add scholarships, competitions, or research distinctions]"
+      title: "Current Base",
+      body: "Vancouver, BC, Canada"
     },
     {
-      title: "Leadership",
-      body: "[Add mentoring, team leadership, or cross-functional ownership examples]"
-    },
-    {
-      title: "Research Interests",
-      body: "[Add interests such as retrieval systems, LLM evaluation, memory systems, multimodal AI]"
-    },
-    {
-      title: "Work Authorization / Location",
-      body: "Open Work Permit. [Add current location or relocation preference in Canada]"
+      title: "Work Authorization",
+      body: "Open Work Permit"
     }
   ]
 };
@@ -303,13 +303,19 @@ function populateProjects() {
       tagList.appendChild(span);
     });
 
-    const linksRow = document.createElement("div");
-    linksRow.className = "links-row";
-    project.links.forEach((link) => {
-      linksRow.appendChild(createAnchor(link, "inline-link"));
-    });
+    const validLinks = project.links.filter((link) => !isPlaceholder(link.href));
 
-    article.append(meta, title, problem, bulletList, impactTitle, impactList, tagList, linksRow);
+    article.append(meta, title, problem, bulletList, impactTitle, impactList, tagList);
+
+    if (validLinks.length > 0) {
+      const linksRow = document.createElement("div");
+      linksRow.className = "links-row";
+      validLinks.forEach((link) => {
+        linksRow.appendChild(createAnchor(link, "inline-link"));
+      });
+      article.appendChild(linksRow);
+    }
+
     container.appendChild(article);
   });
 }
@@ -341,26 +347,44 @@ function populateExperience() {
 }
 
 function populateResearch() {
+  const researchSection = document.getElementById("research");
   const pubs = document.getElementById("publications-list");
-  portfolioData.publications.forEach((publication) => {
-    const item = document.createElement("article");
-    item.className = "stack-item";
-    item.innerHTML = `
-      <h3>${publication.title}</h3>
-      <p class="meta">${publication.venue} · ${publication.year}</p>
-      <p>${publication.description}</p>
-      <p class="muted">${publication.note}</p>
-    `;
-    pubs.appendChild(item);
-  });
+  if (portfolioData.publications.length === 0) {
+    pubs.parentElement.style.display = "none";
+  } else {
+    portfolioData.publications.forEach((publication) => {
+      const item = document.createElement("article");
+      item.className = "stack-item";
+      item.innerHTML = `
+        <h3>${publication.title}</h3>
+        <p class="meta">${publication.venue} · ${publication.year}</p>
+        <p>${publication.description}</p>
+      `;
+      if (publication.note) {
+        const note = document.createElement("p");
+        note.className = "muted";
+        note.textContent = publication.note;
+        item.appendChild(note);
+      }
+      pubs.appendChild(item);
+    });
+  }
 
   const patents = document.getElementById("patents-list");
-  portfolioData.patents.forEach((patent) => {
-    const item = document.createElement("article");
-    item.className = "stack-item";
-    item.innerHTML = `<p>${patent}</p>`;
-    patents.appendChild(item);
-  });
+  if (portfolioData.patents.length === 0) {
+    patents.parentElement.style.display = "none";
+  } else {
+    portfolioData.patents.forEach((patent) => {
+      const item = document.createElement("article");
+      item.className = "stack-item";
+      item.innerHTML = `<p>${patent}</p>`;
+      patents.appendChild(item);
+    });
+  }
+
+  if (portfolioData.publications.length === 0 && portfolioData.patents.length === 0) {
+    researchSection.style.display = "none";
+  }
 }
 
 function populateSkills() {
