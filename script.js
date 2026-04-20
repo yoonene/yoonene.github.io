@@ -7,7 +7,7 @@ const portfolioData = {
     summary:
       "Over the past three years, I've worked on live AI products where retrieval quality, latency, and cost all matter at once. My work sits at the intersection of search, evaluation, model optimization, and serving, with a strong focus on building systems teams can actually ship and operate.",
     ctas: [
-      { label: "Resume", href: "CV_OOO.pdf", primary: true },
+      { label: "Resume", href: "CV.pdf", primary: true },
       { label: "GitHub", href: "https://github.com/yoonene" },
       { label: "LinkedIn", href: "https://www.linkedin.com/in/yoonhye-kim-271a6a216/" },
       { label: "Email", href: "mailto:neune21153@gmail.com" }
