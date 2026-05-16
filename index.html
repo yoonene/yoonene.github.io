@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yoonhye Kim | AI Engineer Portfolio</title>
+    <title>Yoonhye Kim | Machine Learning Engineer</title>
     <meta
       name="description"
       content="Yoonhye Kim is a machine learning engineer who builds practical AI systems, with experience in retrieval, evaluation, and low-latency serving for live products."
@@ -14,14 +15,14 @@
     />
     <meta name="theme-color" content="#f3efe6" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Yoonhye Kim | AI Engineer Portfolio" />
+    <meta property="og:title" content="Yoonhye Kim | Machine Learning Engineer" />
     <meta
       property="og:description"
       content="Machine learning engineer building practical AI systems for live products, from retrieval and evaluation to low-latency serving."
     />
     <meta property="og:image" content="assets/og-card.svg" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Yoonhye Kim | AI Engineer Portfolio" />
+    <meta name="twitter:title" content="Yoonhye Kim | Machine Learning Engineer" />
     <meta
       name="twitter:description"
       content="Practical AI systems, retrieval, evaluation, and low-latency serving."
@@ -43,7 +44,9 @@
         <nav class="site-nav" aria-label="Primary">
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
+          <a href="#side-projects">Side Projects</a>
           <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
           <a href="#research">Research</a>
           <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
@@ -113,13 +116,33 @@
         </div>
       </section>
 
-      <section class="section" id="experience">
+      <section class="section" id="side-projects">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Side Projects</p>
+            <h2>Things I built outside of work</h2>
+          </div>
+          <div class="cards-grid" id="side-projects-grid"></div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="experience">
         <div class="container">
           <div class="section-heading">
             <p class="eyebrow">Experience</p>
             <h2>Roles, responsibilities, and shipped work</h2>
           </div>
           <div class="timeline" id="experience-timeline"></div>
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Education</p>
+            <h2>Academic background</h2>
+          </div>
+          <div class="timeline" id="education-timeline"></div>
         </div>
       </section>
 
@@ -152,7 +175,7 @@
         </div>
       </section>
 
-      <section class="section section-alt" id="education">
+      <section class="section section-alt" id="style">
         <div class="container two-column">
           <div>
             <div class="section-heading left-aligned">
@@ -209,6 +232,13 @@
         <p id="footer-year"></p>
       </div>
     </footer>
+
+    <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-label="Project details">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Close">&times;</button>
+        <div class="modal-body"></div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
